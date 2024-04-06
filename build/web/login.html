@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/grid.css">  
+        <link rel="stylesheet" href="./css/loginStyle.css" >
+    </head>
+    <body>
+        <style>
+            html{
+                background: #007bff;
+                background: linear-gradient(to right, #00626E, #33AFFF);
+            }
+        </style>
+<!--        <form action="MainController" method="POST">
+            User ID<input type="text" name="userID" required=""/></br>
+            Password<input type="password" name="password" required=""/></br>
+            <input type="submit" name="action" value="Login" />
+            <input type="reset" value="Reset" />
+        </form>-->
+<!--        <a href="create.jsp">Create User</a> </br>
+        <a href="shopping.jsp">Clothes Shopping </a>-->
+        <div class="container">
+            <div class="grid">
+                <div class="row">
+                    <h1>Login</h1>
+                </div>
+    
+                <div class="main row">
+                    <form action="MainController" method="POST" id="form">
+                        <div class="title">Username</div> 
+                        <input type="text" name="userID" required="" class="text-box"/> <br/>
+                        <div class="title">Password</div> 
+                        <input type="password" name="password" required="" class="text-box"/> <br/>
+                        <div class="button">
+                            <input type="submit" name="action" value="Login" class="btn" />
+                            <input type="reset" value="Reset" class="btn" />
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LcXAO4oAAAAAMpuVqecgSkHvn3OWGPZqwLH2Pib"></div>
+                        <div id = "error"></div>
+                    </form>
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                </div>
+    
+                <div class="footer row">
+                    <a href="MainController?action=Create_Page">Don't have account? Sign Up!</a> 
+                    <a href="MainController?action=Shopping_Page">Click here to buy books</a>
+                             <a href="MainController?action=Total">Total</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
